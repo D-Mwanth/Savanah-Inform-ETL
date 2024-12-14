@@ -1,0 +1,7 @@
+pandas==2.2.2
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+awscli==1.36.20
+boto3==1.35.79
+python-dotenv==1.0.1
+requests==2.32.3
