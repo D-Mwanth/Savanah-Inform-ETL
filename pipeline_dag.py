@@ -3,6 +3,9 @@ from airflow import DAG
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from airflow.operators.python import PythonOperator
+from airflow.operators.dummy import DummyOperator
+from airflow.providers.http.sensors.http import HttpSensor
+
 from dag_utils.etl_helpers import (
     extract_users_data,
     extract_products_data,
@@ -39,67 +42,80 @@ with DAG(
     catchup=False
 ) as dag:
 
+    # Dummy tasks to represent APIs
+    fetch_user_data_api = DummyOperator(
+        task_id="users_api_sensor"
+    )
+
+    fetch_prod_data_api = DummyOperator(
+        task_id="products_api_sensor"
+    )
+
+    fetch_carts_data_api = DummyOperator(
+        task_id="carts_api_sensor"
+    )
+
     # Extract Data from APIs and upload to S3
     fetch_user_data = PythonOperator(
-        task_id="Extract_User_Json_to_S3",
+        task_id="extract_users_json_to_S3",
         python_callable=extract_users_data
     )
 
     fetch_prod_data = PythonOperator(
-        task_id="Extract_Product_Json_to_S3",
+        task_id="extract_products_json_to_S3",
         python_callable=extract_products_data
     )
 
     fetch_carts_data = PythonOperator(
-        task_id="Extract_Cart_Json_to_S3",
+        task_id="extract_carts_json_to_S3",
         python_callable=extract_carts_data
     )
 
-    # # Transform Data
-    transform_users_data = PythonOperator(
-        task_id="Transform_User_Data",
+    # Transform Data
+    create_users_datase = PythonOperator(
+        task_id="create_users_datase",
         python_callable=transform_user_data,
         provide_context=True
     )
 
-    transform_products_data = PythonOperator(
-        task_id="Transform_Product_Data",
+    create_products_datase = PythonOperator(
+        task_id="create_products_datase",
         python_callable=transform_product_data,
         provide_context=True
     )
 
-    transform_carts_data = PythonOperator(
-        task_id="Transform_Cart_Data",
+    transactions_dataset = PythonOperator(
+        task_id="create_transactions_dataset",
         python_callable=transform_cart_data,
         provide_context=True
     )
 
     # Load Datasets to RDS Postgress
     load_users_to_db = PythonOperator(
-        task_id="Load_User_Data_to_DB",
+        task_id="load_users_data_to_DB",
         python_callable=load_user_data,
         provide_context=True
     )
 
     load_products_to_db = PythonOperator(
-        task_id="Load_Product_Data_to_DB",
+        task_id="load_products_data_to_DB",
         python_callable=load_product_data,
         provide_context=True
     )
 
     load_carts_to_db = PythonOperator(
-        task_id="Load_Cart_Data_to_DB",
+        task_id="load_transactions_data_to_DB",
         python_callable=load_cart_data,
         provide_context=True
     )
 
     # Set task dependencies
-    fetch_user_data >> transform_users_data
-    fetch_carts_data >> transform_users_data
-    fetch_prod_data >> transform_products_data
-    fetch_carts_data >> transform_products_data
-    fetch_carts_data >> transform_carts_data
+    fetch_user_data_api >> fetch_user_data >> create_users_datase
+    fetch_carts_data >> create_users_datase
+    fetch_prod_data_api >> fetch_prod_data >> create_products_datase
+    fetch_carts_data >> create_products_datase
+    fetch_carts_data_api >> fetch_carts_data >> transactions_dataset
 
-    transform_users_data >> load_users_to_db
-    transform_products_data >> load_products_to_db
-    transform_carts_data >> load_carts_to_db
+    create_users_datase >> load_users_to_db
+    create_products_datase >> load_products_to_db
+    transactions_dataset >> load_carts_to_db
