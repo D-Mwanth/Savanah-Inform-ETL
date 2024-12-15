@@ -47,5 +47,3 @@ def load_product_data(**kwargs):
 def load_cart_data(**kwargs):
     carts_path = kwargs['ti'].xcom_pull(task_ids='create_transactions_dataset')
     load_csv_to_rds(carts_path, db_config, "carts_table", ["cart_id", "product_id"])
-
-#  
