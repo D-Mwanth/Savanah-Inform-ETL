@@ -18,7 +18,6 @@ from dag_utils.etl_helpers import (
     load_cart_data
 )
 
-# Load env vars
 load_dotenv()
 
 default_args = {
@@ -27,7 +26,6 @@ default_args = {
     'retry_delay': timedelta(seconds=5)
 }
 
-# DAG definition
 with DAG(
     "etl_pipeline",
     default_args=default_args,
@@ -119,7 +117,6 @@ with DAG(
         dag=dag,
     )
 
-    # Database Operations
     user_summaries = PostgresOperator(
         task_id='user_transaction_summaries',
         postgres_conn_id='postgress_connection',
