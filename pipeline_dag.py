@@ -37,15 +37,15 @@ with DAG(
 
     # Dummy tasks to represent APIs
     fetch_user_data_api = DummyOperator(
-        task_id="users_api_sensor"
+        task_id="users_dummyjson_api"
     )
 
     fetch_prod_data_api = DummyOperator(
-        task_id="products_api_sensor"
+        task_id="products_dummyjson_api"
     )
 
     fetch_carts_data_api = DummyOperator(
-        task_id="carts_api_sensor"
+        task_id="carts_dummyjson_api"
     )
 
     # Extract Data from APIs and upload to S3
