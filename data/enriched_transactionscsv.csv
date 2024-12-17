@@ -1,0 +1,122 @@
+"cart_id","user_id","product_id","quantity","price","total_cart_value","product_name","category","brand"
+"1","33","168","3","32999.99","103774.85","Charger SXT RWD","vehicle","Charger SXT RWD"
+"1","33","78","2","1999.99","103774.85","Apple MacBook Pro 14 Inch Space Grey","laptops","Apple MacBook Pro 14 Inch Space Grey"
+"1","33","183","5","24.99","103774.85",NULL,NULL,NULL
+"1","33","100","5","129.99","103774.85","Apple Airpods","mobile-accessories","Apple Airpods"
+"2","142","144","4","44.99","4794.8",NULL,NULL,NULL
+"2","142","124","4","899.99","4794.8","iPhone X","smartphones","iPhone X"
+"2","142","148","4","9.99","4794.8",NULL,NULL,NULL
+"2","142","122","3","299.99","4794.8","iPhone 6","smartphones","iPhone 6"
+"2","142","110","5","14.99","4794.8",NULL,NULL,NULL
+"3","108","98","1","13999.99","16775.87","Rolex Submariner Watch","mens-watches","Rolex Submariner Watch"
+"3","108","125","5","249.99","16775.87","Oppo A57","smartphones","Oppo A57"
+"3","108","55","2","6.99","16775.87",NULL,NULL,NULL
+"3","108","62","2","5.99","16775.87",NULL,NULL,NULL
+"3","108","132","3","499.99","16775.87","Samsung Galaxy S8","smartphones","Samsung Galaxy S8"
+"4","87","187","5","49.99","456.83",NULL,NULL,NULL
+"4","87","40","5","3.99","456.83",NULL,NULL,NULL
+"4","87","156","5","34.99","456.83",NULL,NULL,NULL
+"4","87","62","2","5.99","456.83",NULL,NULL,NULL
+"5","134","108","2","29.99","7431.3",NULL,NULL,NULL
+"5","134","138","5","8.99","7431.3",NULL,NULL,NULL
+"5","134","157","2","19.99","7431.3",NULL,NULL,NULL
+"5","134","8","3","89.99","7431.3","Dior J'adore","fragrances","Dior"
+"5","134","80","5","1399.99","7431.3","Huawei Matebook X Pro","laptops","Huawei Matebook X Pro"
+"5","134","28","3","5.49","7431.3",NULL,NULL,NULL
+"6","150","172","5","49.99","35199.86",NULL,NULL,NULL
+"6","150","112","3","499.99","35199.86","TV Studio Camera Pedestal","mobile-accessories","TV Studio Camera Pedestal"
+"6","150","97","3","10999.99","35199.86","Rolex Datejust","mens-watches","Rolex Datejust"
+"6","150","128","3","149.99","35199.86","Realme C35","smartphones","Realme C35"
+"7","86","167","5","28999.99","145651.89","300 Touring","vehicle","300 Touring"
+"7","86","111","4","12.99","145651.89",NULL,NULL,NULL
+"7","86","129","2","299.99","145651.89","Realme X","smartphones","Realme X"
+"8","23","117","2","7499.99","15685.86","Sportbike Motorcycle","motorcycle","Sportbike Motorcycle"
+"8","23","18","4","8.99","15685.86",NULL,NULL,NULL
+"8","23","105","5","99.99","15685.86","Apple MagSafe Battery Pack","mobile-accessories","Apple MagSafe Battery Pack"
+"8","23","6","3","49.99","15685.86",NULL,NULL,NULL
+"9","194","178","2","89.99","65529.87","Corset Leather With Skirt","womens-dresses","Corset Leather With Skirt"
+"9","194","191","4","15999.99","65529.87","Rolex Cellini Moonphase","womens-watches","Rolex Cellini Moonphase"
+"9","194","47","2","49.99","65529.87",NULL,NULL,NULL
+"9","194","134","5","249.99","65529.87","Vivo S1","smartphones","Vivo S1"
+"10","160","190","5","4999.99","29499.92","IWC Ingenieur Automatic Steel","womens-watches","IWC Ingenieur Automatic Steel"
+"10","160","94","3","1499.99","29499.92","Longines Master Collection","mens-watches","Longines Master Collection"
+"11","172","88","1","149.99","568.36","Nike Air Jordan 1 Red And Black","mens-shoes","Nike Air Jordan 1 Red And Black"
+"11","172","32","3","3.49","568.36",NULL,NULL,NULL
+"11","172","74","3","4.99","568.36",NULL,NULL,NULL
+"11","172","145","3","29.99","568.36",NULL,NULL,NULL
+"11","172","26","3","0.99","568.36",NULL,NULL,NULL
+"11","172","127","1","299.99","568.36","Oppo K1","smartphones","Oppo K1"
+"12","202","63","4","7.99","931.91",NULL,NULL,NULL
+"12","202","181","5","179.99","931.91","Marni Red & Black Suit","womens-dresses","Marni Red & Black Suit"
+"13","41","85","2","34.99","793.07",NULL,NULL,NULL
+"13","41","109","3","19.99","793.07",NULL,NULL,NULL
+"13","41","160","1","599.99","793.07","Samsung Galaxy Tab S8 Plus Grey","tablets","Samsung Galaxy Tab S8 Plus Grey"
+"13","41","163","3","19.99","793.07",NULL,NULL,NULL
+"13","41","31","4","0.79","793.07",NULL,NULL,NULL
+"14","94","92","3","109.99","586.82","Sports Sneakers Off White Red","mens-shoes","Sports Sneakers Off White Red"
+"14","94","54","5","8.99","586.82",NULL,NULL,NULL
+"14","94","76","1","11.99","586.82",NULL,NULL,NULL
+"14","94","44","5","29.99","586.82",NULL,NULL,NULL
+"14","94","67","3","15.99","586.82",NULL,NULL,NULL
+"14","94","16","1","1.99","586.82",NULL,NULL,NULL
+"15","11","11","5","1899.99","11741.31","Annibale Colombo Bed","furniture","Annibale Colombo"
+"15","11","133","3","699.99","11741.31","Samsung Galaxy S10","smartphones","Samsung Galaxy S10"
+"15","11","111","3","12.99","11741.31",NULL,NULL,NULL
+"15","11","162","3","29.99","11741.31",NULL,NULL,NULL
+"15","11","30","5","2.49","11741.31",NULL,NULL,NULL
+"16","200","19","2","9.99","172.24",NULL,NULL,NULL
+"16","200","152","3","49.99","172.24",NULL,NULL,NULL
+"16","200","35","1","2.29","172.24",NULL,NULL,NULL
+"17","141","1","2","9.99","192.87",NULL,NULL,NULL
+"17","141","60","3","10.99","192.87",NULL,NULL,NULL
+"17","141","74","4","4.99","192.87",NULL,NULL,NULL
+"17","141","44","4","29.99","192.87",NULL,NULL,NULL
+"18","189","127","4","299.99","1464.78","Oppo K1","smartphones","Oppo K1"
+"18","189","24","3","14.99","1464.78",NULL,NULL,NULL
+"18","189","20","5","4.99","1464.78",NULL,NULL,NULL
+"18","189","154","3","29.99","1464.78",NULL,NULL,NULL
+"18","189","44","2","29.99","1464.78",NULL,NULL,NULL
+"18","189","5","5","8.99","1464.78",NULL,NULL,NULL
+"19","59","187","3","49.99","933.87",NULL,NULL,NULL
+"19","59","153","5","11.99","933.87",NULL,NULL,NULL
+"19","59","34","3","7.99","933.87",NULL,NULL,NULL
+"19","59","130","2","349.99","933.87","Realme XT","smartphones","Realme XT"
+"20","90","107","1","49.99","3534.78",NULL,NULL,NULL
+"20","90","193","3","799.99","3534.78","Watch Gold for Women","womens-watches","Watch Gold for Women"
+"20","90","100","3","129.99","3534.78","Apple Airpods","mobile-accessories","Apple Airpods"
+"20","90","90","5","89.99","3534.78","Puma Future Rider Trainers","mens-shoes","Puma Future Rider Trainers"
+"20","90","118","5","8.99","3534.78",NULL,NULL,NULL
+"20","90","166","5","39.99","3534.78",NULL,NULL,NULL
+"21","42","77","2","5.99","251.96",NULL,NULL,NULL
+"21","42","91","2","119.99","251.96","Sports Sneakers Off White & Red","mens-shoes","Sports Sneakers Off White & Red"
+"22","140","73","5","19.99","222.88",NULL,NULL,NULL
+"22","140","2","2","19.99","222.88",NULL,NULL,NULL
+"22","140","69","2","3.99","222.88",NULL,NULL,NULL
+"22","140","155","3","24.99","222.88",NULL,NULL,NULL
+"23","147","82","5","1499.99","7757.8","New DELL XPS 13 9300 Laptop","laptops","New DELL XPS 13 9300 Laptop"
+"23","147","172","4","49.99","7757.8",NULL,NULL,NULL
+"23","147","41","2","2.49","7757.8",NULL,NULL,NULL
+"23","147","37","4","1.99","7757.8",NULL,NULL,NULL
+"23","147","138","5","8.99","7757.8",NULL,NULL,NULL
+"24","6","108","5","29.99","1749.9",NULL,NULL,NULL
+"24","6","134","4","249.99","1749.9","Vivo S1","smartphones","Vivo S1"
+"24","6","174","1","599.99","1749.9","Prada Women Bag","womens-bags","Prada Women Bag"
+"25","118","4","1","12.99","412.98",NULL,NULL,NULL
+"25","118","126","1","399.99","412.98","Oppo F19 Pro+","smartphones","Oppo F19 Pro+"
+"26","66","37","5","1.99","459.92",NULL,NULL,NULL
+"26","66","128","3","149.99","459.92","Realme C35","smartphones","Realme C35"
+"27","75","33","1","4.99","190.89",NULL,NULL,NULL
+"27","75","110","2","14.99","190.89",NULL,NULL,NULL
+"27","75","16","3","1.99","190.89",NULL,NULL,NULL
+"27","75","83","5","29.99","190.89",NULL,NULL,NULL
+"28","147","1","5","9.99","209.91",NULL,NULL,NULL
+"28","147","141","4","39.99","209.91",NULL,NULL,NULL
+"29","170","80","2","1399.99","3862.43","Huawei Matebook X Pro","laptops","Huawei Matebook X Pro"
+"29","170","107","4","49.99","3862.43",NULL,NULL,NULL
+"29","170","25","2","1.29","3862.43",NULL,NULL,NULL
+"29","170","121","4","199.99","3862.43","iPhone 5s","smartphones","iPhone 5s"
+"29","170","153","5","11.99","3862.43",NULL,NULL,NULL
+"30","177","181","1","179.99","128249.07","Marni Red & Black Suit","womens-dresses","Marni Red & Black Suit"
+"30","177","171","4","31999.99","128249.07","Pacifica Touring","vehicle","Pacifica Touring"
+"30","177","35","4","2.29","128249.07",NULL,NULL,NULL
+"30","177","46","4","14.99","128249.07",NULL,NULL,NULL
