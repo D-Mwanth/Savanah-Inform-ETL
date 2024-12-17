@@ -532,7 +532,7 @@ I chose to include the users from the carts api to the dataset of the users from
 
 **Finding**
 
-Some products in the carts data were not in the products data. Since business cant sell products they dont offer, I decided to add them to the products dataset, since manipulating cart products I was able to discover all field corresponding to those in the products dataset, unlike in the case of users where I ended up with null values. As a result of combining the untracked products with products dataset, I ended up with a dataset of [45 distinct products]() unlike the original one which had only 30 products.
+Some products in the carts data were not in the products data. Since business cant sell products they dont offer, I decided to add them to the products dataset, since manipulating cart products I was able to discover all field corresponding to those in the products dataset, unlike in the case of users where I ended up with null values. As a result of combining the untracked products with products dataset, I ended up with a dataset of [45 distinct products](./data/products_table.csv) unlike the original one which had only 30 products.
 
 
 - I ignored setting relationship between the tables as the pipeline was not designed for incremental situation and everytime the pipeline runs first deletes the table and then create it again and this lead to error unleass we cascade.
